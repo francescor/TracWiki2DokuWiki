@@ -27,7 +27,7 @@ A maintained fork is available at https://github.com/khaledblah/TracWiki2DokuWik
  
 ## renamefiles.php
 1. First copy the attached files from your old trac instance to your dokuwiki instance:
-        find /trac/attachments/wiki -type f -exec cp -a \{\} /var/www/dokuwiki/data/media \;
+        ```find /trac/attachments/wiki -type f -exec cp -a {} /var/www/dokuwiki/data/media \;```
    (This conversion does NOT treat sub pages correctly. All are put in the same dir)
 2. Copy renamefiles.php and tracwiki2dokuwiki.php into dokuwiki/data/media
 3. cd into dokuwiki/data/media and run ./renamefiles.php
